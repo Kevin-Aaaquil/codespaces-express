@@ -6,6 +6,9 @@ app.use(express.json())
 app.use(express.urlencoded({
   extended:true
 }))
+app.get("/",(req,res)=>{
+  res.send("HELLO WORLD")
+})
 app.get('/bfhl', (req, res) => {
  const response = {
   "operation_code":1
